@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Case 05</title>
+
+  <style>
+
+    main {
+      width: 50vw;
+      height: 50vh;
+      border: 5px solid red;
+
+      position: absolute;
+
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+
+      margin: auto;
+
+      overflow: hidden;
+
+    }
+
+    section{
+      width: 200vw; /* ( 50vw * 4 = 200vw ) */
+      display: flex;
+
+      animation-name: my-animation;
+      animation-duration: 10s;
+      animation-timing-function: ease-in;
+      animation-iteration-count: infinite;
+      animation-direction: alternate-reverse;
+
+      transform: translateX(0%);
+    }
+
+    section>div{
+      width: 50vw;
+      height: 50vh;
+      background-color: pink;
+      border: 1px solid purple;
+    }
+
+    section>div:first-child{
+      background-image: url("assets/slide1.jpeg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    section>div:nth-child(2){
+      background-image: url("assets/slide2.jpeg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    section>div:nth-child(3){
+      background-image: url("assets/slide3.jpeg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    section>div:last-child{
+      background-image: url("assets/slide4.jpeg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    @keyframes my-animation {
+
+      0%,20%{
+        transform: translateX(0%);
+      } 25%,45%{
+        transform: translateX(-25%);
+      } 50%,70%{
+        transform: translateX(-50%);
+      } 75%,95%{
+        transform: translateX(-75%);
+      }
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+<main>
+
+  <section>
+
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+
+  </section>
+
+</main> <!-- main eka thama mada thiyena 50vw kotuva. eeke athule thama thiyenne images 4 da ganna puluvan vidiyata
+            images 4 width eka 200px vuna section eka. e section ekata flex dunnama ara images 4 eka digata ganata place
+            venava. e images 4 da ganna section eka athule divs 4k hadanava.-->
+
+</body>
+</html>

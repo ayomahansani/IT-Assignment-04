@@ -1,10 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>$Title$</title>
+    <meta charset="UTF-8">
+    <title>Case 04</title>
+
+    <style>
+
+        div{
+            width: 10px;
+            aspect-ratio: 1/1;
+            border-radius: 100px;
+            border: 8px solid red;
+
+            position: absolute;
+
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+
+            margin: auto;
+
+            animation-name: my-animation;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            animation-timing-function: linear;
+        }
+
+        @keyframes my-animation {
+            from{
+                width: 20px;
+            } to{
+                width: 190px;
+                opacity: 10%;
+            }
+        }
+
+    </style>
+
 </head>
+
 <body>
-$END$
+
+<div></div>
+
 </body>
 </html>
