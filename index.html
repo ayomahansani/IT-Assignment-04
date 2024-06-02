@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IT-Assignment-04</title>
+
+    <link rel="stylesheet" href="assets/normalize-css.css">
+
+    <style>
+
+      section{
+        width: 100vw;
+        height: 100vh;
+        background: palevioletred;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      section>div{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      section>div>div{
+        width: 250px;
+        height: 200px;
+        background: black;
+        text-align: center;
+        border: 1px solid black;
+        margin: 3rem;
+        position: relative;
+      }
+
+      a{
+        position: absolute;
+        color: white;
+        font-size: 20px;
+        top: 5rem;
+        right: 0;
+        left: 0;
+        margin: auto;
+      }
+
+      section>div>div:hover{
+        background: rgba(0, 0, 0, 0.64);
+        transform: scale(1.1);
+        transition: 1s ease;
+      }
+
+    </style>
+
+</head>
+<body>
+
+<section>
+
+  <h1>IT-Assignment-04</h1>
+
+  <div>
+    <div><a href="case-01.html">Case 01</a></div>
+    <div><a href="case-02.html">Case 02</a></div>
+    <div><a href="case-03.html">Case 03</a></div>
+  </div>
+
+  <div>
+    <div><a href="case-04.html">Case 04</a></div>
+    <div><a href="case-05.html">Case 05</a></div>
+    <div><a href="case-06.html">Case 06</a></div>
+  </div>
+
+</section>
+
+</body>
+</html>
